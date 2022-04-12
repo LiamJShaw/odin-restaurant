@@ -26,22 +26,27 @@ nav {
 
 .nav-container {
     padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
     
 }
 
-.nav-links {
+.nav-links,
+.left-links,
+.right-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 1rem;
 
-    max-width: 50%;
+    width: 100%;
     margin: auto;
 
     font-weight: 600;
 }
 
 .logo {
+    flex-shrink: 1;
     flex-basis: 30%;
     font-weight: 900;
     font-size: x-large;
@@ -100,7 +105,8 @@ nav a {
     align-items: center;
     gap: 1rem;
 
-    padding-top: 1rem;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .hero-container .buttons button {
@@ -122,32 +128,38 @@ main {
     flex: 1;
 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+
+    flex-direction: column;
 
     padding-top: 2rem;
 }
 
 main .main-container {
     display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     max-width: 80%;
 }
 
 main img {
-    width: 50%;
-    height: 60%;
+    width: 40%;
+    height: auto;
 }
 
 main .info {
-    max-width: 60%;
-    
+    max-width: 50%;
+    margin: 1rem;
     color: black;
 }
 
 main .info p {
     font-size: x-large;
     font-weight: 600;
-    font-family: 'Shadows Into Light', cursive;    
-    margin-block: 1rem;
+    font-family: 'Shadows Into Light', cursive;
+    margin-bottom: 4rem;
 }
 
 footer {
@@ -156,4 +168,30 @@ footer {
     text-align: center;
     padding: 0.25rem;
     opacity: 75%;
+
+    margin-top: auto;
+}
+
+/* I feel like this should be in its own CSS? */
+.beers-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: start; */
+
+    gap: 1rem;
+}
+
+.beer-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    min-width: 10rem;
+    min-height: 15rem;
+
+    padding: 1rem;
+    
+    background-color: rgb(10, 3, 39);
+    color: white;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Head of Steam</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
@@ -15,14 +15,18 @@
         <nav>
             <div class="nav-container">
                 <ul class="nav-links">
-                    <li>
-                        <a href="#">Bars</a>
-                    </li>
                     
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-        
+                    <div class="left-links">
+                        <li>
+                            <a href="#">Bars</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+            
+                    </div>
+
                     <li class="logo">
                         <a href="#">
                             <svg id="b01ed126-e4cb-49fd-aba2-a25fc0d37c4e" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 823.29 505.88">
@@ -57,17 +61,19 @@
                         </a>
                     </li>
 
-                    <li>
-                        <a href="#">App</a>
-                    </li>
+                    <div class="right-links">
+                        <li>
+                            <a href="#">App</a>
+                        </li>
 
-                    <li>
-                        <a href="#">Online Store</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Book a Table</a>
-                    </li>
+                        <li>
+                            <a href="#">Online Store</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Book a Table</a>
+                        </li>
+                    </div>
 
                 </ul>
             </div>
@@ -79,14 +85,14 @@
                 <p class="established">Est. 06.06.09</p>
     
                 <div class="buttons">
-                    <button class="beers">Beers</button>
-                    <button class="cocktails">Cocktails</button>
-                    <button class="food">Food</button>
+                    <button id="beers">Beers</button>
+                    <button id="cocktails">Cocktails</button>
+                    <button id="food">Food</button>
                 </div>
             </div>
         </section>
 
-        <main>
+        <main class="main">
             <div class="main-container">
                 <div class="info">
                     <p>
@@ -107,9 +113,8 @@
                 </div>
     
                 <img src="../img/durham.avif" alt="Photo of the bar" class="bar">
-    
             </div>
-            
+
         </main>
 
         <footer>
