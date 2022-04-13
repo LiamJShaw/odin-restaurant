@@ -92,7 +92,7 @@ nav a {
 }
 
 .hero-container .title {
-    font-size: xxx-large;
+    font-size: 6rem;
 }
 
 .hero-container .established {
@@ -111,12 +111,15 @@ nav a {
 
 .hero-container .buttons button {
     padding: 1rem 3rem;
-    border-style: solid;
+    border-style: none;
     border-radius: 5px;
     background-color: #18314f;
     
     color: inherit;
     font-size: large;
+
+    outline: white solid 1px;
+    outline-offset: -6px;
 }
 
 .hero-container .buttons button:hover {
@@ -136,7 +139,11 @@ main {
     padding-top: 2rem;
 }
 
-main .main-container {
+
+/* I feel like this should be in its own CSS with Webpack? */
+/* About us content */
+
+main .about-container {
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -172,13 +179,15 @@ footer {
     margin-top: auto;
 }
 
-/* I feel like this should be in its own CSS? */
+/* Beers content */
 .beers-container {
     display: flex;
-    justify-content: space-between;
-    /* align-items: start; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
     gap: 1rem;
+
+    max-width: 80%;
 }
 
 .beer-card {
@@ -191,6 +200,7 @@ footer {
     min-height: 15rem;
 
     padding: 1rem;
+    margin-bottom: 2rem;
     
     background-color: rgb(10, 3, 39);
     color: white;

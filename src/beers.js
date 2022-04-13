@@ -2,6 +2,9 @@ const beerContainer = document.createElement("div");
 beerContainer.classList.add("beers-container");
 
 export function displayBeerContainer() {
+    
+    // Is there a better way to stop the same content being loaded twice?
+    beerContainer.innerHTML = "";
 
     fillBeerContainer();
     return beerContainer;
