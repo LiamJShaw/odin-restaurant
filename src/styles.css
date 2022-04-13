@@ -80,7 +80,7 @@ nav a {
     align-items: center;
     justify-content: center;
 
-    padding: 3rem 2rem;
+    padding: 1rem 2rem 0.5rem 2rem;
     
 }
 
@@ -105,7 +105,7 @@ nav a {
     align-items: center;
     gap: 1rem;
 
-    margin: 1rem;
+    margin-top: 3rem;
     padding: 1rem;
 }
 
@@ -113,7 +113,7 @@ nav a {
     padding: 1rem 3rem;
     border-style: none;
     border-radius: 5px;
-    background-color: #18314f;
+    background-color: #5d3602;
     
     color: inherit;
     font-size: large;
